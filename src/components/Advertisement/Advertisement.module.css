@@ -1,0 +1,225 @@
+/*  General  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.info-title {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  font-weight: bold;
+  width: 540px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 204px;
+  margin-bottom: 18px;
+}
+
+.info-text {
+  font-size: 18px;
+  font-weight: medium;
+  line-height: 32px;
+  letter-spacing: 0.12px;
+  width: 540px;
+  color: #9e9aa8;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18px;
+}
+
+.advertisement {
+  display: flex;
+  gap: 30px;
+  margin-top: 100px;
+  margin-left: 165px;
+  margin-right: 165px;
+  background-image: url(/images/rectangle.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1110px 8px;
+  z-index: 1;
+}
+
+.dominance {
+  width: 350px;
+  height: 267px;
+  background-color: white;
+}
+
+.second {
+  margin-top: 44px;
+}
+
+.third {
+  margin-top: 88px;
+}
+
+.statistics-img {
+  width: 40px;
+  height: 40px;
+}
+
+.circle {
+  position: relative;
+  top: -44px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a3054;
+  border-radius: 50%;
+  padding: 24px;
+  margin-left: 32px;
+}
+
+.statistics-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 32px;
+  margin-bottom: 12px;
+}
+
+.statistics-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  width: 286px;
+  color: #9e9aa8;
+  margin-left: 32px;
+}
+
+/* REsponsive */
+
+@media (max-width: 1360px) {
+  .footer-logo {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 1315px) {
+  .advertisement {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 1205px) {
+  .info-content {
+    margin-top: -100px;
+  }
+
+  .advertisement {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .advertisement {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/images/rectangle.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    width: 8px;
+    height: 1014px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .second {
+    margin-top: 92px;
+  }
+}
+
+@media (max-width: 660px) {
+  .advertisement {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dominance {
+    width: 327px;
+  }
+
+  .circle {
+    margin-left: 120px;
+  }
+}
+
+@media (max-width: 560px) {
+  .info-title {
+    font-size: 28px;
+    width: 280px;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .info-text {
+    text-align: left;
+    width: 345px;
+    margin-left: 10px;
+  }
+
+  .advertisement {
+    margin-left: 155px;
+  }
+}
+
+@media (max-width: 444px) {
+  .circle {
+    margin-left: 80px;
+  }
+
+  .dominance {
+    width: 255px;
+  }
+
+  .info-text {
+    width: 280px;
+  }
+
+  .statistics-title {
+    margin-left: 12px;
+  }
+
+  .statistics-text {
+    font-size: 12px;
+    width: 215px;
+    text-align: left;
+    margin-left: 12px;
+  }
+}

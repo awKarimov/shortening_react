@@ -1,0 +1,381 @@
+/* Responsive */
+
+@media (max-width: 3000px) {
+  .burger-menu {
+    display: none;
+  }
+
+  .nd-burger-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1435px) {
+  .hero {
+    height: 1450px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero-title {
+    font-size: 98px;
+    width: 645px;
+    margin-bottom: 25px;
+  }
+
+  .hero-text {
+    font-size: 34px;
+  }
+
+  .blue-button {
+    font-size: 35px;
+    border-radius: 35px;
+  }
+
+  .hero-img {
+    width: 150%;
+    height: 800px;
+    margin-left: 340px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .footer-logo {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 1315px) {
+  .advertisement {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 1205px) {
+  .info-content {
+    margin-top: -100px;
+  }
+
+  .advertisement {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .footer-logo {
+    margin-left: 50px;
+    margin-right: 55px;
+  }
+
+  .footer-links {
+    gap: 85px;
+  }
+}
+
+@media (max-width: 970px) {
+  .footer {
+    height: 950px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    text-align: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .advertisement {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/images/rectangle.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    width: 8px;
+    height: 1014px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .second {
+    margin-top: 92px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .burger-menu {
+    display: block;
+    margin-left: 30px;
+  }
+
+  .header-logo {
+    margin-left: 40px;
+  }
+
+  .data {
+    display: none;
+  }
+
+  .sign {
+    margin-right: 60px;
+  }
+
+  .hero {
+    height: 1250px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero-title {
+    font-size: 80px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+
+  .hero-text {
+    font-size: 24px;
+  }
+
+  .blue-button {
+    font-size: 27px;
+    border-radius: 35px;
+  }
+
+  .hero-img {
+    width: 110%;
+    height: 800px;
+    margin-left: 340px;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    height: 1250px;
+  }
+
+  .hero-img {
+    width: 120%;
+    margin-top: 0;
+    margin-left: 135px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-img {
+    margin-top: -90px;
+    margin-bottom: -80px;
+  }
+}
+
+@media (max-width: 660px) {
+  .burger-menu {
+    display: none;
+  }
+
+  .sign {
+    display: none;
+  }
+
+  .nd-burger-menu {
+    display: block;
+    margin-right: 30px;
+  }
+
+  .hero {
+    height: 1000px;
+  }
+
+  .hero-data {
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 60px;
+    margin-top: -30px;
+    line-height: 75px;
+    margin-right: 125px;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 22px;
+    width: 512px;
+    margin-left: 206px;
+  }
+
+  .blue-button {
+    font-size: 32px;
+    margin-left: 46px;
+  }
+
+  .advertisement {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dominance {
+    width: 327px;
+  }
+
+  .circle {
+    margin-left: 120px;
+  }
+
+  .cta-title {
+    font-size: 24px;
+  }
+
+  .cta-content {
+    height: 200px;
+  }
+
+  .cta-button {
+    font-size: 20px;
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    height: 735px;
+  }
+
+  .hero-title {
+    font-size: 35px;
+    line-height: 45px;
+    margin-top: -90px;
+  }
+
+  .hero-text {
+    font-size: 15px;
+    line-height: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .blue-button {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+
+  .hero-img {
+    margin-top: -160px;
+  }
+
+  .info-title {
+    font-size: 28px;
+    width: 280px;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .info-text {
+    text-align: left;
+    width: 345px;
+    margin-left: 10px;
+  }
+
+  .advertisement {
+    margin-left: 155px;
+  }
+}
+
+@media (max-width: 444px) {
+  .header-logo {
+    width: 80px;
+    height: 22px;
+    margin-left: 0;
+  }
+
+  .nd-burger-menu {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+  }
+
+  .hero {
+    height: 530px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 0.4px;
+  }
+
+  .hero-text {
+    font-size: 12px;
+    margin-top: -20px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    margin-bottom: -25px;
+  }
+
+  .blue-button {
+    font-size: 14px;
+    padding: 6px 18px;
+  }
+
+  .hero-img {
+    width: 120%;
+    margin-top: -210px;
+    margin-bottom: -140px;
+  }
+
+  .circle {
+    margin-left: 80px;
+  }
+
+  .dominance {
+    width: 255px;
+  }
+
+  .info-text {
+    width: 280px;
+  }
+
+  .statistics-title {
+    margin-left: 12px;
+  }
+
+  .statistics-text {
+    font-size: 12px;
+    width: 215px;
+    text-align: left;
+    margin-left: 12px;
+  }
+}
+
+@media (max-width: 350px) {
+  .hero-img {
+    width: 130%;
+    margin-left: 60px;
+    margin-bottom: -170px;
+  }
+
+  .advertisement {
+    margin-left: 115px;
+  }
+}

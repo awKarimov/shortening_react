@@ -1,0 +1,102 @@
+/*  General  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*  */
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 55px;
+  background-color: white;
+}
+
+.content {
+  display: flex;
+  gap: 46px;
+}
+
+.header-logo {
+  width: 120px;
+  height: 33px;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header-link {
+  font-weight: bold;
+  color: #9e9aa8;
+}
+
+.sign {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+  margin-right: 150px;
+}
+
+.sign-up {
+  background-color: #2bd0d0;
+  border-radius: 28px;
+  padding: 9px 23px;
+  color: white;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.nd-burger-menu {
+  display: none;
+}
+
+@media (max-width: 870px) {
+  .nd-burger-menu {
+    display: block;
+  }
+
+  .data {
+    display: none;
+  }
+
+  .sign {
+    display: none;
+  }
+}
