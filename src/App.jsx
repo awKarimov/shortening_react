@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import Header from "./components/Header/Index.jsx";
 import Hero from "./components/Hero/Hero.jsx";
 import Advertisement from "./components/Advertisement/Advertisement.jsx";
 import Cta from "./components/Cta/Cta.jsx";
