@@ -60,19 +60,6 @@ a {
   margin-top: 18px;
 }
 
-.advertisement {
-  display: flex;
-  gap: 30px;
-  margin-top: 100px;
-  margin-left: 165px;
-  margin-right: 165px;
-  background-image: url(/images/rectangle.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1110px 8px;
-  z-index: 1;
-}
-
 .dominance {
   width: 350px;
   height: 267px;
