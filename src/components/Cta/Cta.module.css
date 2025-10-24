@@ -43,7 +43,7 @@ a {
 
 .cta-content {
   text-align: center;
-  background-image: url(../../../public/cta-img.jpg);
+  background-image: url(/cta-img.jpg);
   height: 250px;
   width: 1440px;
   display: inline-block;
