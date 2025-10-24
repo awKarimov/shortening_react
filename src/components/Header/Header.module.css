@@ -36,12 +36,15 @@ a {
 
 /*  */
 
+.header {
+  background-color: white;
+}
+
 .header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 55px;
-  background-color: white;
 }
 
 .content {

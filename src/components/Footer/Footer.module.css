@@ -47,7 +47,7 @@ a {
   width: 120px;
   height: 33px;
   margin-top: 71px;
-  margin-left: 163px;
+  margin-left: 43px;
   margin-right: 262px;
   fill: white;
 }
@@ -78,4 +78,49 @@ h4 {
   display: flex;
   gap: 24px;
   margin-top: 73px;
+}
+
+@media (max-width: 1210px) {
+  .footer-logo {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .footer-logo {
+    margin-right: 60px;
+  }
+
+  .footer-links {
+    margin-right: 55px;
+  }
+
+  .footer-link {
+    margin-right: -65px;
+  }
+}
+
+@media (max-width: 915px) {
+  .footer {
+    height: auto;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-logo {
+    margin-left: 60px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h4 {
+    margin-left: 65px;
+  }
 }
