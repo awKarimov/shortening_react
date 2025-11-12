@@ -1,69 +1,40 @@
+import { useTranslation } from "react-i18next";
 import css from "./Header.module.css";
 
 export default function Header() {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
+
   return (
     <header className={css.header}>
       <div className={`${css.container} ${css["header-content"]}`}>
-        <div className={css.content}>
-          <svg
-            className={css["burger-menu"]}
-            width="32"
-            height="32"
-            viewBox="0 0 15 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z"
-              fill="currentColor"
-              fill-rule="evenodd"
-              clip-rule="evenodd"></path>
-          </svg>
+        <img src="./logo.svg" alt="logo" className={css["header-logo"]} />
 
-          <a href="./index.html">
-            <img
-              className={css["header-logo"]}
-              src="./logo.svg"
-              alt="Shortly logo"
-            />
+        <nav className={css.nav}>
+          <a href="#">{t("header.features")}</a>
+          <a href="#">{t("header.pricing")}</a>
+          <a href="#">{t("header.resources")}</a>
+        </nav>
+
+        <nav className={css.sign}>
+          <a href="#">{t("header.login")}</a>
+          <a href="#" className={css["sign-up"]}>
+            {t("header.signup")}
           </a>
-          <nav className={css.data}>
-            <a href="#">
-              <li className={css["header-link"]}>Features</li>
-            </a>
-            <a href="#">
-              <li className={css["header-link"]}>Pricing</li>
-            </a>
-            <a href="#">
-              <li className={css["header-link"]}>Resources</li>
-            </a>
-          </nav>
-        </div>
+        </nav>
 
-        <div>
-          <nav className={css.sign}>
-            <a href="#">
-              <li className={css["header-link"]}>Login</li>
-            </a>
-            <a href="#">
-              <li className={`${css["header-link"]} ${css["sign-up"]}`}>
-                Sign up
-              </li>
-            </a>
-          </nav>
-        </div>
-        <svg
-          className={css["nd-burger-menu"]}
-          width="32"
-          height="32"
-          viewBox="0 0 15 15"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z"
-            fill="currentColor"
-            fill-rule="evenodd"
-            clip-rule="evenodd"></path>
-        </svg>
+        <select
+          className={css.lang}
+          onChange={(e) => changeLanguage(e.target.value)}
+          value={i18n.language}>
+          <option value="uz">🇺🇿 Uz</option>
+          <option value="ru">🇷🇺 Ru</option>
+          <option value="en">🇬🇧 En</option>
+          <option value="ko">🇰🇷 Ko</option>
+        </select>
       </div>
     </header>
   );

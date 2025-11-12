@@ -1,17 +1,18 @@
-import Header from "./components/Header/Index.jsx";
-import Hero from "./components/Hero/Hero.jsx";
-import Advertisement from "./components/Advertisement/Advertisement.jsx";
-import Cta from "./components/Cta/Cta.jsx";
-import Footer from "./components/Footer/Footer.jsx";
+import "./i18n";
+import Header from "./components/Header/Index";
+import Hero from "./components/Hero/Hero";
+import Advertisement from "./components/Advertisement/Advertisement";
+import Cta from "./components/Cta/Cta";
+import Footer from "./components/Footer/Footer";
 
 export default function App() {
   return (
-    <div>
-      <Header></Header>
-      <Hero></Hero>
-      <Advertisement></Advertisement>
-      <Cta></Cta>
-      <Footer></Footer>
-    </div>
+    <>
+      <Header />
+      <Hero />
+      <Advertisement />
+      <Cta />
+      <Footer />
+    </>
   );
 }

@@ -1,32 +1,23 @@
+import { useTranslation } from "react-i18next";
 import css from "./Hero.module.css";
 
 export default function Hero() {
+  const { t } = useTranslation();
+
   return (
-    <div>
-      <section className={css.hero}>
-        <div className={css.container}>
-          <div className={css["hero-content"]}>
-            <div className={css["hero-data"]}>
-              <h1 className={css["hero-title"]}>
-                More than just <br />
-                shorter links
-              </h1>
-              <p className={css["hero-text"]}>
-                Build your brand’s recognition and get detailed insights on how
-                your links are performing.
-              </p>
-              <a className={css["blue-button"]} href="#">
-                Get Started
-              </a>
-            </div>
-            <img
-              className={css["hero-img"]}
-              src="./hero-img.svg"
-              alt="human work with computer"
-            />
+    <section className={css.hero}>
+      <div className={css.container}>
+        <div className={css["hero-content"]}>
+          <div>
+            <h1>{t("hero.title")}</h1>
+            <p>{t("hero.text")}</p>
+            <a href="#" className={css["blue-button"]}>
+              {t("hero.button")}
+            </a>
           </div>
+          <img src="./hero-img.svg" alt="hero" />
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }
